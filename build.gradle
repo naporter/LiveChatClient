@@ -1,0 +1,22 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+    id 'org.beryx.jlink' version '2.22.1'
+}
+
+repositories {
+    mavenCentral()
+}
+
+javafx {
+    version = "15"
+    modules = [ 'javafx.controls', 'javafx.fxml' ]
+}
+
+mainClassName = "$moduleName/org.livechat.client.ClientMain"
+
+jlink {
+    launcher {
+        name = 'Live Chat Client'
+    }
+}

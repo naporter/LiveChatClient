@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.livechat.client.Controller">
+   <children>
+      <TextArea fx:id="convoBox" editable="false" layoutX="25.0" layoutY="25.0" prefHeight="325.0" prefWidth="300.0" wrapText="true" />
+      <TextField fx:id="messageBox" layoutX="25.0" layoutY="386.0" onAction="#sendMsg" prefHeight="25.0" prefWidth="169.0" promptText="Enter to send" />
+      <ComboBox fx:id="activeUsers" layoutX="209.0" layoutY="386.0" onShown="#getActiveClients" prefHeight="25.0" prefWidth="116.0" promptText="Send to" />
+   </children>
+</Pane>
